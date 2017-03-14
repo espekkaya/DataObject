@@ -58,7 +58,7 @@ namespace PikselSense\DataModel
             $this->LastName = $value;
         }
         
-        public function getName()'
+        public function getName()
         {
             if(empty($this->Name))
                 return $this->getFirstName() ." ". $this->getLastName();
