@@ -1,5 +1,5 @@
 # DataObject
-Manage your database table via model
+Manage your database table via model in php
 
 Features
 --------
