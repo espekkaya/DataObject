@@ -15,8 +15,11 @@ Create your own model extends DataObject class
 Example
 --------
 
+```
 User.php
+```
 
+```php
 namespace PikselSense\DataModel
 {
     class User extends DataObject
@@ -55,7 +58,7 @@ namespace PikselSense\DataModel
             $this->LastName = $value;
         }
         
-        public function getName()
+        public function getName()'
         {
             if(empty($this->Name))
                 return $this->getFirstName() ." ". $this->getLastName();
@@ -64,9 +67,13 @@ namespace PikselSense\DataModel
         }
     }
 }
+```
 
+```
 index.php
+```
 
+```php
 $row = array('Id' => 1, 'FirstName' => 'John');
 
 $User = new User($row); // pass array or object to set properties
@@ -81,5 +88,4 @@ print_r($User->getObject2Array()); // convert Object to Array - return  array('I
 
 echo $User->getAddress(); // throw exception is not a valid property
 $User->setName('Doe Sample'); // throw exception Property 'Name' is read only
-
-
+```
